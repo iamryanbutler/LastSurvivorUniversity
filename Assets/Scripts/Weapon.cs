@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 
 public class Weapon : MonoBehaviour
@@ -19,6 +20,9 @@ public class Weapon : MonoBehaviour
 
     // the weapon that the player is holding
     private GameObject currentWeapon;
+
+    public TextMeshProUGUI weaponNameHUD;
+    public TextMeshProUGUI weaponAmmoHUD;
 
     // is the gun reloading
     private bool isReloading;
@@ -42,7 +46,7 @@ public class Weapon : MonoBehaviour
     /// </summary>
     void Update() {
         // Pressing 1 equips loadout[0]
-        if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
+        //if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
 
         // Pressing 2 equips loadout[1]
         if(Input.GetKeyDown(KeyCode.Alpha2)) Equip(1);
@@ -114,10 +118,16 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Activate Reload trigger and wait.
-    /// </summary>
-    IEnumerator Reload(float p_wait)
+    void LateUpdate()
+    {
+        weaponNameHUD.text = loadout[currentIndex].name;
+        weaponAmmoHUD.text = !loadout[currentIndex].isMelee ? $"{loadout[currentIndex].GetCurrentClip()} / {loadout[currentIndex].GetRemainingTotal()}" : "";
+    }
+
+        /// <summary>
+        /// Activate Reload trigger and wait.
+        /// </summary>
+        IEnumerator Reload(float p_wait)
     {
         isReloading = true;
         currentWeapon.SetActive(false);
