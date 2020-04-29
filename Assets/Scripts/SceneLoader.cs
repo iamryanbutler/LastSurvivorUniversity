@@ -13,6 +13,8 @@ public class SceneLoader : MonoBehaviour
         MainMenu,
         Scene1,
         Scene2,
+        Scene3,
+        Scene4
     }
 
     private Scene? sceneToLoad;
