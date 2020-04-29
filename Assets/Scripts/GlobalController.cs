@@ -8,6 +8,7 @@ public class GlobalController : MonoBehaviour
 
     public SceneLoader SceneLoader;
     public PlayerInfoStorage PlayerInfoStorage = new PlayerInfoStorage();
+    public TypeWriterQueue TypeWriterQueue = new TypeWriterQueue();
 
     void Awake()
     {

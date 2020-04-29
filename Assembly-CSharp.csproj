@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ChangeSceneScript.cs" />
+     <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Drop.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\GlobalController.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\SceneTransitionTrigger.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjectGenerators\Gun.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjectGenerators\PowerUp.cs" />
+     <Compile Include="Assets\Scripts\TypeWriterQueue.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\enemyHealth.cs" />
      <Compile Include="Assets\Scripts\minimap.cs" />
