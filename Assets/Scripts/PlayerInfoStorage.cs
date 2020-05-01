@@ -37,5 +37,7 @@ public class PlayerInfo
     public float fullHealth;
     public float currentShield;
     public float fullShield;
-    public Gun[] loadout;
+    public int currentWeaponIndex;
+    public int currentClipAmmo;
+    public int currentTotalAmmo;
 }

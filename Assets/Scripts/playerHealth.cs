@@ -12,8 +12,8 @@ public class playerHealth : MonoBehaviour
     //public float fullStamina;
     //public GameObject deathFX;
 
-    float currentHealth;
-    float currentShield;
+    [SerializeField] float currentHealth;
+    [SerializeField] float currentShield;
 
     
 
@@ -30,13 +30,12 @@ public class playerHealth : MonoBehaviour
     float smoothColour = 5f;
 
     // Start is called before the first frame update
-    void Start()
+/*    void Start()
     {
-        currentHealth = fullHealth;
-        currentShield = fullShield;
-        //currentStamina = fullStamina;
+        currentHealth = GetCurrentHealth();
+        currentShield = GetCurrentShield();
         damaged = false;
-    }
+    }*/
 
     public void AddHealth(float health)
     {
@@ -61,18 +60,6 @@ public class playerHealth : MonoBehaviour
             PlayerShield.fillAmount = (float)currentShield / (float)fullShield;
         }
     }
-
-    /*public void AddStamina(float stamina)
-    {
-        if (stamina == 0) return;
-
-        if (CanApplyStamina())
-        {
-            currentStamina += stamina;
-            if (currentStamina > fullStamina) currentStamina = fullStamina;
-            PlayerStamina.fillAmount = (float)currentStamina / (float)fullStamina;
-        }
-    }*/
 
 
     public void addDamage(float damage)

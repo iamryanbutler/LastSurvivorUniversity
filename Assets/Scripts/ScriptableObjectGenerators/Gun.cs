@@ -98,6 +98,11 @@ public class Gun : ScriptableObject
         return currentTotalAmmo;
     }
 
+    public void SetRemainingTotal(int ammo)
+    {
+        currentTotalAmmo = ammo;
+    }
+
     /// <summary>
     /// Increases the current total ammo left in total.
     /// </summary>
@@ -113,5 +118,10 @@ public class Gun : ScriptableObject
     public int GetCurrentClip()
     {
         return currentClipAmmo;
+    }
+
+    public void SetCurrentClip(int ammo)
+    {
+        currentClipAmmo = ammo;
     }
 }
