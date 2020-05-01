@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
     // is the gun reloading
     private bool isReloading;
 
-     Animator anim;
+    Animator anim;
 
     /// <summary>
     /// Initilizes each gun in the player's loadout
@@ -46,7 +46,7 @@ public class Weapon : MonoBehaviour
         //if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
 
         // Pressing 2 equips loadout[1]
-        if(Input.GetKeyDown(KeyCode.Alpha2)) NextWeapon();
+        if (Input.GetKeyDown(KeyCode.Alpha2)) NextWeapon();
 
         if (Input.GetKeyDown(KeyCode.Alpha7)) DialogueManager.instance.PushDialogue(new List<string> { "This is the text that would play for option 1",
                                                                                                                     "This is the text that would play for option 2",
@@ -60,9 +60,9 @@ public class Weapon : MonoBehaviour
         if (currentWeapon != null)
         {
             // Shooting functionality for non full-auto guns
-            if(loadout[currentIndex].fireType != 2)
+            if (loadout[currentIndex].fireType != 2)
             {
-                if(Input.GetKeyDown(KeyCode.Space) && currentCooldown <= 0)
+                if (Input.GetKeyDown(KeyCode.Space) && currentCooldown <= 0)
                 {
                     // returns true only if it has a bullet in the clip
                     // auto-decrements the bullet from the gun ammo
@@ -86,7 +86,7 @@ public class Weapon : MonoBehaviour
             // Shooting functionality for full-auto guns
             else
             {
-                if(Input.GetKey(KeyCode.Space) && currentCooldown <= 0)
+                if (Input.GetKey(KeyCode.Space) && currentCooldown <= 0)
                 {
                     // returns true only if it has a bullet in the clip
                     // auto-decrements the bullet from the gun ammo
@@ -109,17 +109,17 @@ public class Weapon : MonoBehaviour
             }
 
             // Pressing R will attempt to manually reload the weapon.
-            if(Input.GetKeyDown(KeyCode.R) && loadout[currentIndex].GetCurrentClip() < loadout[currentIndex].totalclipCapacity)
+            if (Input.GetKeyDown(KeyCode.R) && loadout[currentIndex].GetCurrentClip() < loadout[currentIndex].totalclipCapacity)
             {
-                if(loadout[currentIndex].GetRemainingTotal() > 0)
+                if (loadout[currentIndex].GetRemainingTotal() > 0)
                     StartCoroutine(Reload(loadout[currentIndex].reloadTime));
                 else
                     Debug.Log("No more reserved ammo");
             }
-            
+
 
             // Manage cooldown for fire rate.
-            if(currentCooldown > 0)
+            if (currentCooldown > 0)
                 currentCooldown -= Time.deltaTime;
 
             // create an "elastic" effect. If the gun moves, it will always go back to the start position.
@@ -136,7 +136,7 @@ public class Weapon : MonoBehaviour
             weaponAmmoHUD.color = new Color32(255, 0, 0, 255); //red
             weaponAmmoHUD.text = "Reloading";
         }
-        else if((loadout[currentIndex].GetRemainingTotal() == 0 && loadout[currentIndex].GetCurrentClip() == 0) && !loadout[currentIndex].isMelee)
+        else if ((loadout[currentIndex].GetRemainingTotal() == 0 && loadout[currentIndex].GetCurrentClip() == 0) && !loadout[currentIndex].isMelee)
         {
             weaponAmmoHUD.color = new Color32(255, 0, 0, 255); //red
             weaponAmmoHUD.text = "Out of Ammo";
@@ -167,8 +167,8 @@ public class Weapon : MonoBehaviour
     /// </summary>
     /// <param name"p_ind">Index of weapon in player loadout</param>
     void Equip(int p_ind) {
-        if(currentWeapon != null){
-            if(isReloading)
+        if (currentWeapon != null) {
+            if (isReloading)
                 StopCoroutine("Reload");
             Destroy(currentWeapon);
         }
@@ -181,7 +181,10 @@ public class Weapon : MonoBehaviour
         currentWeapon = t_newWeapon;
     }
 
-    public void NextWeapon() => Equip(++currentIndex);
+    public void NextWeapon() { Equip(++currentIndex);
+        FindObjectOfType<AudioManager>().Play("weaponUpgrade");
+    }
+
 
     /// <summary>
     /// Generate the bullet projectile for the gun's shot.

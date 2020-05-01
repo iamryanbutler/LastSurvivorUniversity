@@ -70,12 +70,16 @@ public class playerHealth : MonoBehaviour
         if (currentShield <= 0)
         {
             currentHealth -= damage;
+            FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerHealth.fillAmount = (float)currentHealth / (float)fullHealth;
+            
         }
         else
         {
             currentShield -= damage;
+            FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerShield.fillAmount = (float)currentShield / (float)fullShield;
+            
         }
 
         if (currentHealth <= 0) { makeDead();
