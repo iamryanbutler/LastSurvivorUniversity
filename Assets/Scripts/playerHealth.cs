@@ -91,8 +91,11 @@ public class playerHealth : MonoBehaviour
             PlayerShield.fillAmount = (float)currentShield / (float)fullShield;
         }
 
-        if (currentHealth <= 0) { makeDead(); }
+        if (currentHealth <= 0) { makeDead();
+            FindObjectOfType<AudioManager>().Play("death");
+        }
         damaged = true;
+
     }
 
     public void makeDead() => Destroy(gameObject);
