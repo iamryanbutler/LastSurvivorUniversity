@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
     public float enemyMaxHealth;
+    
    // public GameObject deathFX;
 
     float currentHealth;
 
    // public bool drops;
-   // public GameObject theDrop;
-
+    public GameObject prefab;
+    GameObject theDrop;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +35,14 @@ public class enemyHealth : MonoBehaviour
 
     void makeDead()
     {
-       // Instantiate(deathFX, transform.position, transform.rotation);
+
+        Debug.Log(this.gameObject.name);
+        if (String.Equals(this.gameObject.name, "BrennerBoss", StringComparison.OrdinalIgnoreCase))
+        {
+            
+            theDrop = Instantiate(prefab, this.gameObject.transform.position, Quaternion.identity, this.gameObject.transform);
+            theDrop.transform.position += new Vector3(0, this.gameObject.transform.position.y, 0);
+        }
         Destroy(gameObject);
-       // if (drops) Instantiate(theDrop, transform.position, transform.rotation);
     }
 }

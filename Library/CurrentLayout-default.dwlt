@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 61
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 116
+  controlID: 143
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 117
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 349
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -359,8 +359,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -612
     m_HBaseRangeMax: 612
-    m_VBaseRangeMin: -317
-    m_VBaseRangeMax: 317
+    m_VBaseRangeMin: -327.5
+    m_VBaseRangeMax: 327.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -377,11 +377,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1224
-      height: 634
+      height: 655
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 612, y: 317}
+    m_Translation: {x: 612, y: 327.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -389,9 +389,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -612
-      y: -317
+      y: -327.5
       width: 1224
-      height: 634
+      height: 655
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1224, y: 655}
@@ -429,23 +429,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4640000
-      m_LastClickedID: 25844
-      m_ExpandedIDs: e060ffff
+      m_SelectedIDs: be480000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 82f3ffff96faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: WideFrontStaircase
-        m_OriginalName: WideFrontStaircase
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 26058
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 155.56645, y: 5.5088196, z: 146.98209}
+    m_Target: {x: -21.525154, y: -39.77839, z: 215.57683}
     speed: 2
-    m_Value: {x: 155.56645, y: 5.5088196, z: 146.98209}
+    m_Value: {x: -21.525154, y: -39.77839, z: 215.57683}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -539,13 +539,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17602704, y: 0.02362282, z: -0.0042253924, w: 0.9840945}
+    m_Target: {x: 0.115135506, y: -0.043196406, z: 0.00501477, w: 0.9924043}
     speed: 2
-    m_Value: {x: 0.17602675, y: 0.023622781, z: -0.0042253854, w: 0.98409283}
+    m_Value: {x: 0.11662319, y: -0.043188542, z: 0.0050795265, w: 0.99222374}
   m_Size:
-    m_Target: 84.69084
+    m_Target: 100.179825
     speed: 2
-    m_Value: 81.04387
+    m_Value: 104.90034
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -635,20 +635,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Jacob Swanson\Documents\GitHub\LastSurvivorUniversity
+  m_LastProjectPath: C:\Users\Osamh\Documents\Unity\LastSurvivorUniversity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: ba6a0000
-    m_LastClickedID: 27322
-    m_ExpandedIDs: 00000000ba6a0000c46a0000c66a0000c86a0000cc6a0000ce6a0000e46a0000ec6a0000066b00000a6b0000146b00001e6b00003a6b0000426b0000586b00008c6b0000926b0000a06b0000e46b0000e66b0000ee6b0000046c00000e6c0000226c00002a6c0000386c00005e6c00006c6c00006e6c0000ac6c0000b86c000000ca9a3b
+    m_SelectedIDs: fc450000
+    m_LastClickedID: 17916
+    m_ExpandedIDs: 000000005c44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +676,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ba6a0000
+    m_ExpandedIDs: 000000005c440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

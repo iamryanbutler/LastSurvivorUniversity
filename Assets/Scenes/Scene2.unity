@@ -609,6 +609,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ed2de746852615a4cb371af4e8078379, type: 2}
   - {fileID: 11400000, guid: fbfe9773ed52a7e47b4a865ad6704959, type: 2}
   weaponParent: {fileID: 1074136572}
+  weaponNameHUD: {fileID: 0}
+  weaponAmmoHUD: {fileID: 0}
 --- !u!114 &1283655711
 MonoBehaviour:
   m_ObjectHideFlags: 0
