@@ -32,7 +32,7 @@ public class Drop : MonoBehaviour
                 default:
                     break;
             }
-            FindObjectOfType<AudioManager>().Play("pickUpSound");
+            
         }
     }
 
@@ -44,6 +44,7 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<playerHealth>().AddHealth(powerUp.changeInHealth);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("pickUpSound");
     }
 
     void ShieldPack(GameObject player)
@@ -54,6 +55,7 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<playerHealth>().AddShield(powerUp.changeInShield);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("pickUpSound");
     }
 
     void AmmoPack(GameObject player)
@@ -64,5 +66,6 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<Weapon>().loadout[1].IncreaseRemainingTotal(powerUp.changeInTotalAmmo);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("pickUpSound");
     }
 }
