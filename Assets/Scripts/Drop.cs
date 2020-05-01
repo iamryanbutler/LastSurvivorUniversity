@@ -32,6 +32,7 @@ public class Drop : MonoBehaviour
                 default:
                     break;
             }
+            
         }
     }
 
@@ -43,6 +44,7 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<playerHealth>().AddHealth(powerUp.changeInHealth);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("yessir");
     }
 
     void ShieldPack(GameObject player)
@@ -53,6 +55,7 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<playerHealth>().AddShield(powerUp.changeInShield);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("yessir");
     }
 
     void AmmoPack(GameObject player)
@@ -63,5 +66,6 @@ public class Drop : MonoBehaviour
 
         player.GetComponent<Weapon>().loadout[1].IncreaseRemainingTotal(powerUp.changeInTotalAmmo);
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("yessir");
     }
 }

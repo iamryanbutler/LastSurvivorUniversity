@@ -74,6 +74,7 @@ public class Weapon : MonoBehaviour
                         PlayAnimation();
                         // generate the bullet projectile
                         Shoot();
+                        PlaySound();
                     }
                     else
                     {
@@ -95,6 +96,7 @@ public class Weapon : MonoBehaviour
                     if (loadout[currentIndex].FireBullet() || loadout[currentIndex].isMelee)
                         // generate the bullet projectile
                         Shoot();
+                        
                     else
                     {
                         if (loadout[currentIndex].GetRemainingTotal() > 0)
@@ -172,7 +174,8 @@ public class Weapon : MonoBehaviour
     /// </summary>
     void Shoot()
     {
-        
+
+        //FindObjectOfType<AudioManager>().Play("gunSound");
 
         // gun's point of fire
         Transform t_spawn = transform.Find("ShootPosition");
@@ -204,6 +207,21 @@ public class Weapon : MonoBehaviour
                 break;
             case false:
                 anim.SetTrigger("Shooting");
+                break;
+        }
+
+    }
+
+    void PlaySound()
+    {
+
+        switch (loadout[currentIndex].isMelee)
+        {
+            case true:
+                FindObjectOfType<AudioManager>().Play("melee");
+                break;
+            case false:
+                FindObjectOfType<AudioManager>().Play("gun");
                 break;
         }
 
