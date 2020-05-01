@@ -169,6 +169,8 @@ public class Weapon : MonoBehaviour
         currentWeapon = t_newWeapon;
     }
 
+    public void NextWeapon() => Equip(++currentIndex);
+
     /// <summary>
     /// Generate the bullet projectile for the gun's shot.
     /// </summary>

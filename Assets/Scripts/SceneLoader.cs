@@ -11,10 +11,11 @@ public class SceneLoader : MonoBehaviour
     {
         IntroScene,
         MainMenu,
-        Scene1,
-        Scene2,
-        Scene3,
-        Scene4
+        Quad,
+        PathToLockett,
+        LockettBasement,
+        LockettBasementBossArea,
+        LockettUpstairs
     }
 
     private Scene? sceneToLoad;

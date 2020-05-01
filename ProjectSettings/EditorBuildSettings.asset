@@ -12,15 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: d1807c2d0d06cd5418c49bc370a2efce
   - enabled: 1
-    path: Assets/Scenes/Scene1.unity
+    path: Assets/Scenes/Quad.unity
     guid: 41407c0844eb48e4192b8417cbd8c8ee
   - enabled: 1
-    path: Assets/Scenes/Scene3.unity
+    path: Assets/Scenes/PathToLockett.unity
+    guid: 64da1fb83747f0d4a9dfc0c61d764064
+  - enabled: 1
+    path: Assets/Scenes/LockettBasement.unity
     guid: ab57baec3dff3e24680277ed1eec773d
   - enabled: 1
-    path: Assets/Scenes/Scene4.unity
+    path: Assets/Scenes/LockettBasementBossArea.unity
     guid: 1bebc21ab658263428a29f59c600b640
   - enabled: 1
-    path: Assets/Scenes/Scene5.unity
+    path: Assets/Scenes/LockettUpstairs.unity
     guid: 43510bba43f28cb4ab1c390e711bf1e8
   m_configObjects: {}
