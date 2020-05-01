@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour
         //if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
 
         // Pressing 2 equips loadout[1]
-        if(Input.GetKeyDown(KeyCode.Alpha2)) Equip(1);
+        if(Input.GetKeyDown(KeyCode.Alpha2)) Equip(2);
 
         if (Input.GetKeyDown(KeyCode.Alpha7)) DialogueManager.instance.PushDialogue(new List<string> { "This is the text that would play for option 1",
                                                                                                                     "This is the text that would play for option 2",
