@@ -35157,7 +35157,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -35204,6 +35204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullHealth: 100
   fullShield: 100
+  currentHealth: 0
+  currentShield: 0
   PlayerHealth: {fileID: 493380448}
   PlayerShield: {fileID: 510757830}
   damageScreen: {fileID: 0}
@@ -35223,6 +35225,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ed2de746852615a4cb371af4e8078379, type: 2}
   - {fileID: 11400000, guid: fbfe9773ed52a7e47b4a865ad6704959, type: 2}
   - {fileID: 11400000, guid: 35522c006b22631468a41390b45f943f, type: 2}
+  currentIndex: 0
   weaponParent: {fileID: 1991009362}
   weaponNameHUD: {fileID: 270073544}
   weaponAmmoHUD: {fileID: 937484080}
@@ -54954,7 +54957,7 @@ PrefabInstance:
     - target: {fileID: 1762507736104395030, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}
       propertyPath: scene
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5878251626405305615, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}

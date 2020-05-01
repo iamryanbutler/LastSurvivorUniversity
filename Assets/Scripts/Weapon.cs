@@ -35,8 +35,6 @@ public class Weapon : MonoBehaviour
     /// </summary>
     void Start() {
         anim = GetComponent<Animator>();
-
-
         Equip(currentIndex);
     }
 
@@ -48,7 +46,7 @@ public class Weapon : MonoBehaviour
         //if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
 
         // Pressing 2 equips loadout[1]
-        //if(Input.GetKeyDown(KeyCode.Alpha2)) Equip(1);
+        if(Input.GetKeyDown(KeyCode.Alpha2)) NextWeapon();
 
         if (Input.GetKeyDown(KeyCode.Alpha7)) DialogueManager.instance.PushDialogue(new List<string> { "This is the text that would play for option 1",
                                                                                                                     "This is the text that would play for option 2",
@@ -57,7 +55,7 @@ public class Weapon : MonoBehaviour
                                                                                                                     "This is the text that would play for option 5",
                                                                                                                     "This is the text that would play for option 6"});
 
-        if (Input.GetKeyDown(KeyCode.Alpha8)) DialogueManager.instance.ReplayPrevious();
+        //if (Input.GetKeyDown(KeyCode.Alpha8)) DialogueManager.instance.ReplayPrevious();
 
         if (currentWeapon != null)
         {
@@ -93,9 +91,12 @@ public class Weapon : MonoBehaviour
                     // returns true only if it has a bullet in the clip
                     // auto-decrements the bullet from the gun ammo
                     if (loadout[currentIndex].FireBullet() || loadout[currentIndex].isMelee)
+                    {
+                        PlayAnimation();
                         // generate the bullet projectile
                         Shoot();
-                        
+                        PlaySound();
+                    }
                     else
                     {
                         if (loadout[currentIndex].GetRemainingTotal() > 0)
@@ -129,24 +130,36 @@ public class Weapon : MonoBehaviour
     void LateUpdate()
     {
         weaponNameHUD.text = loadout[currentIndex].name;
-        weaponAmmoHUD.text = !loadout[currentIndex].isMelee ? $"{loadout[currentIndex].GetCurrentClip()} / {loadout[currentIndex].GetRemainingTotal()}" : "";
+
+        if (isReloading)
+        {
+            weaponAmmoHUD.color = new Color32(255, 0, 0, 255); //red
+            weaponAmmoHUD.text = "Reloading";
+        }
+        else if((loadout[currentIndex].GetRemainingTotal() == 0 && loadout[currentIndex].GetCurrentClip() == 0) && !loadout[currentIndex].isMelee)
+        {
+            weaponAmmoHUD.color = new Color32(255, 0, 0, 255); //red
+            weaponAmmoHUD.text = "Out of Ammo";
+        }
+        else
+        {
+            weaponAmmoHUD.color = new Color32(70, 29, 124, 255); //purple
+            weaponAmmoHUD.text = !loadout[currentIndex].isMelee ? $"{loadout[currentIndex].GetCurrentClip()} / {loadout[currentIndex].GetRemainingTotal()}" : "";
+        }
     }
 
-        /// <summary>
-        /// Activate Reload trigger and wait.
-        /// </summary>
-        IEnumerator Reload(float p_wait)
+    /// <summary>
+    /// Activate Reload trigger and wait.
+    /// </summary>
+    IEnumerator Reload(float p_wait)
     {
         isReloading = true;
         currentWeapon.SetActive(false);
-        
-        Debug.Log("Reloading . . .");
         yield return new WaitForSeconds(p_wait);
 
         loadout[currentIndex].Reload();
         currentWeapon.SetActive(true);
         isReloading = false;
-        Debug.Log("Reloaded!");
     }
 
     /// <summary>
@@ -175,9 +188,6 @@ public class Weapon : MonoBehaviour
     /// </summary>
     void Shoot()
     {
-
-        //FindObjectOfType<AudioManager>().Play("gunSound");
-
         // gun's point of fire
         Transform t_spawn = transform.Find("ShootPosition");
 
@@ -200,7 +210,6 @@ public class Weapon : MonoBehaviour
 
     void PlayAnimation()
     {
-
         switch (loadout[currentIndex].isMelee)
         {
             case true:
@@ -210,12 +219,10 @@ public class Weapon : MonoBehaviour
                 anim.SetTrigger("Shooting");
                 break;
         }
-
     }
 
     void PlaySound()
     {
-
         switch (loadout[currentIndex].isMelee)
         {
             case true:
@@ -225,7 +232,7 @@ public class Weapon : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("gun");
                 break;
         }
-
     }
 
+    public bool CanApplyAmmo() => loadout[currentIndex].isMelee ? false : true;
 }

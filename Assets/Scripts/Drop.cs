@@ -61,10 +61,10 @@ public class Drop : MonoBehaviour
     void AmmoPack(GameObject player)
     {
         // don't pick up the ammo drop if the player has melee weapon out
-        /*if (player.GetComponent<Weapon>().loadout[0].isMelee)
-            return;*/
+        if (!player.GetComponent<Weapon>().CanApplyAmmo())
+            return;
 
-        player.GetComponent<Weapon>().loadout[1].IncreaseRemainingTotal(powerUp.changeInTotalAmmo);
+        player.GetComponent<Weapon>().loadout[player.GetComponent<Weapon>().currentIndex].IncreaseRemainingTotal(powerUp.changeInTotalAmmo);
         Destroy(gameObject);
         FindObjectOfType<AudioManager>().Play("yessir");
     }
