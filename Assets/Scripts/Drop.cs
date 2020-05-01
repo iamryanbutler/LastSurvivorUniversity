@@ -32,6 +32,7 @@ public class Drop : MonoBehaviour
                 default:
                     break;
             }
+            FindObjectOfType<AudioManager>().Play("pickUpSound");
         }
     }
 
