@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LockettUpstairs.unity
     guid: 43510bba43f28cb4ab1c390e711bf1e8
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: cefc7357c94ce1846bd0230108d97459
   m_configObjects: {}
