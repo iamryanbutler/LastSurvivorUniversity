@@ -46,14 +46,14 @@ public class Weapon : MonoBehaviour
         //if(Input.GetKeyDown(KeyCode.Alpha1)) Equip(0);
 
         // Pressing 2 equips loadout[1]
-        if (Input.GetKeyDown(KeyCode.Alpha2)) NextWeapon();
+        // if (Input.GetKeyDown(KeyCode.Alpha2)) NextWeapon();
 
-        if (Input.GetKeyDown(KeyCode.Alpha7)) DialogueManager.instance.PushDialogue(new List<string> { "This is the text that would play for option 1",
-                                                                                                                    "This is the text that would play for option 2",
-                                                                                                                    "This is the text that would play for option 3",
-                                                                                                                    "This is the text that would play for option 4",
-                                                                                                                    "This is the text that would play for option 5",
-                                                                                                                    "This is the text that would play for option 6"});
+        // if (Input.GetKeyDown(KeyCode.Alpha7)) DialogueManager.instance.PushDialogue(new List<string> { "This is the text that would play for option 1",
+        //                                                                                                             "This is the text that would play for option 2",
+        //                                                                                                             "This is the text that would play for option 3",
+        //                                                                                                             "This is the text that would play for option 4",
+        //                                                                                                             "This is the text that would play for option 5",
+        //                                                                                                             "This is the text that would play for option 6"});
 
         //if (Input.GetKeyDown(KeyCode.Alpha8)) DialogueManager.instance.ReplayPrevious();
 
