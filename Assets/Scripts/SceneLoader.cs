@@ -10,13 +10,13 @@ public class SceneLoader : MonoBehaviour
     public enum Scene
     {
         IntroScene,
+        Tutorial,
         MainMenu,
         Quad,
         PathToLockett,
         LockettBasement,
         LockettBasementBossArea,
         LockettUpstairs,
-        Tutorial
     }
 
     private Scene? sceneToLoad;

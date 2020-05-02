@@ -182,7 +182,7 @@ public class Weapon : MonoBehaviour
     }
 
     public void NextWeapon() { Equip(++currentIndex);
-        FindObjectOfType<AudioManager>().Play("weaponUpgrade");
+        FindObjectOfType<AudioManager>().Play("weaponPickup");
     }
 
 

@@ -74,4 +74,9 @@ public class PlayerManager : MonoBehaviour
         };
         GlobalController.CurrentInstance.PlayerInfoStorage.SetPlayerInfo(currentPlayerInfo);
     }
+
+    public static void ResetPlayerInfo()
+    {
+        GlobalController.CurrentInstance.PlayerInfoStorage.ResetPlayerInfo();
+    }
 }

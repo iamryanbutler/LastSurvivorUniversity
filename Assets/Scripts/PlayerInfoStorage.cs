@@ -7,6 +7,8 @@ public class PlayerInfoStorage
     /// The PlayerInfo data that this PlayerInfoStorageReferences.
     private PlayerInfo myPlayer;
 
+    public bool playedTutorial = false;
+
     /// <summary>
     /// Constructor ( Attaches the PlayerInfo to this Player Storage ).
     /// </summary>
@@ -15,7 +17,7 @@ public class PlayerInfoStorage
     /// <summary>
     /// Sets the PlayerInfo reference to a new PlayerInfo data object.
     /// </summary>
-    public void ResetPlayerInfo() => myPlayer = new PlayerInfo();
+    public void ResetPlayerInfo() => myPlayer = null;
 
 
     /// <summary>

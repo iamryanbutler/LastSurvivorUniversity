@@ -5,22 +5,16 @@ using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour
 {
-    
-
     public float fullHealth;
     public float fullShield;
-    //public float fullStamina;
     //public GameObject deathFX;
 
     [SerializeField] float currentHealth;
     [SerializeField] float currentShield;
 
-    
-
     //HUD variables
     public Image PlayerHealth;
     public Image PlayerShield;
-    //public Image PlayerStamina;
     public Image damageScreen;
     //public Text gameOverScreen;
     
@@ -28,14 +22,6 @@ public class playerHealth : MonoBehaviour
     bool damaged = false;
     Color damagedColor = new Color(0f, 0f, 0f, 0.5f);
     float smoothColour = 5f;
-
-    // Start is called before the first frame update
-/*    void Start()
-    {
-        currentHealth = GetCurrentHealth();
-        currentShield = GetCurrentShield();
-        damaged = false;
-    }*/
 
     public void AddHealth(float health)
     {
@@ -66,16 +52,11 @@ public class playerHealth : MonoBehaviour
     {
         if (damage <= 0) return;
 
-        //Check statement if health or shield will take damage
-
-        
         if (currentShield <= 0)
         {
-            
             currentHealth -= damage;
             FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerHealth.fillAmount = (float)currentHealth / (float)fullHealth;
-            
         }
         else
         {
@@ -83,17 +64,23 @@ public class playerHealth : MonoBehaviour
             if(currentShield == 0) { FindObjectOfType<AudioManager>().Play("armorBreak"); }
             FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerShield.fillAmount = (float)currentShield / (float)fullShield;
-            
         }
 
-        if (currentHealth <= 0) { makeDead();
+        if (currentHealth <= 0)
+        {
+            makeDead();
             FindObjectOfType<AudioManager>().Play("death");
         }
         damaged = true;
-
     }
 
-    public void makeDead() => Destroy(gameObject);
+    public void makeDead()
+    {
+        Destroy(gameObject);
+        PlayerManager.ResetPlayerInfo();
+        GlobalController.CurrentInstance.SceneLoader.FadeOutToScene(SceneLoader.Scene.MainMenu);
+    }
+
     public bool CanApplyHealth() => (currentHealth < fullHealth) ? true : false;
     public bool CanApplyShield() => (currentShield < fullShield) ? true : false;
     //public bool CanApplyStamina() => (currentStamina < fullStamina) ? true : false;
