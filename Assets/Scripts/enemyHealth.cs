@@ -35,6 +35,7 @@ public class enemyHealth : MonoBehaviour
     void makeDead()
     {
         Destroy(gameObject);
+        FindObjectOfType<AudioManager>().Play("zombieDeath");
         if (String.Equals(this.gameObject.name, "BrennerBoss", StringComparison.OrdinalIgnoreCase))
             player.GetComponent<Weapon>().NextWeapon();
     }

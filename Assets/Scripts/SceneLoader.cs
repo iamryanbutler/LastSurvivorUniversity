@@ -15,7 +15,8 @@ public class SceneLoader : MonoBehaviour
         PathToLockett,
         LockettBasement,
         LockettBasementBossArea,
-        LockettUpstairs
+        LockettUpstairs,
+        Tutorial
     }
 
     private Scene? sceneToLoad;

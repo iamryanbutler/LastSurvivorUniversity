@@ -67,15 +67,23 @@ public class playerHealth : MonoBehaviour
         if (damage <= 0) return;
 
         //Check statement if health or shield will take damage
+
+        
         if (currentShield <= 0)
         {
+            
             currentHealth -= damage;
+            FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerHealth.fillAmount = (float)currentHealth / (float)fullHealth;
+            
         }
         else
         {
             currentShield -= damage;
+            if(currentShield == 0) { FindObjectOfType<AudioManager>().Play("armorBreak"); }
+            FindObjectOfType<AudioManager>().Play("gettingHit");
             PlayerShield.fillAmount = (float)currentShield / (float)fullShield;
+            
         }
 
         if (currentHealth <= 0) { makeDead();
