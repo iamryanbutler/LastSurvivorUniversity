@@ -3794,6 +3794,71 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 704488538}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &728487694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728487697}
+  - component: {fileID: 728487696}
+  - component: {fileID: 728487695}
+  m_Layer: 0
+  m_Name: DialogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &728487695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728487694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d69d7fdba421834eab79a1338fe2eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - '"You begin to wonder if perhaps this was a bad idea. Lockett appears to be swarming
+    with zombies, some of whom you recognize as classmates and professors."'
+  - '"Although still somewhat cluttered with barricades, boxes, and other debris,
+    the basement appears to be in much better shape than the floor above. You feel
+    like this floor of Lockett was overrun only recently."'
+  - '"There was no sign of Brener above, but perhaps you''ll get lucky and find some
+    trace of him. After all, SOMEONE was here within the last day or so..."'
+--- !u!65 &728487696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728487694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &728487697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728487694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.478, y: 1.473, z: -21.668}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &728676733
 GameObject:
   m_ObjectHideFlags: 0
@@ -8431,7 +8496,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.42
+      value: -10.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
@@ -8441,7 +8506,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.31
+      value: -22.03
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
@@ -9411,7 +9476,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 336a7abe26e1c524a8a76f948c31b0ee, type: 3}
 --- !u!4 &1264086183 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6795008381383262648, guid: 336a7abe26e1c524a8a76f948c31b0ee,
+    type: 3}
   m_PrefabInstance: {fileID: 1264086182}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1292166440
