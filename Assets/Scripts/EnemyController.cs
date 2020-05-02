@@ -65,7 +65,9 @@ public class EnemyController : MonoBehaviour
         {
             inPunchRadius = true;
             anim.SetBool("isRunning", false);
-            anim.SetBool("isPunching", true);
+            anim.SetBool("isPunching", true);          
+            FindObjectOfType<AudioManager>().Play("zombieAttack");
+           
         }
     }
 
