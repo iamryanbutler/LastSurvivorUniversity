@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: 2b17673f63f234f53ba858021a5c8d60
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: cefc7357c94ce1846bd0230108d97459
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: d1807c2d0d06cd5418c49bc370a2efce
   - enabled: 1
@@ -26,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LockettUpstairs.unity
     guid: 43510bba43f28cb4ab1c390e711bf1e8
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: cefc7357c94ce1846bd0230108d97459
   m_configObjects: {}

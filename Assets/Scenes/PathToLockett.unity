@@ -5264,7 +5264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1480869190}
   smoothSpeed: 0.08
-  offset: {x: 0, y: 7.5, z: -9}
+  offset: {x: 0, y: 9, z: -13}
 --- !u!81 &718624485
 AudioListener:
   m_ObjectHideFlags: 0
@@ -19143,70 +19143,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1841998222}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1843187070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1843187073}
-  - component: {fileID: 1843187072}
-  - component: {fileID: 1843187071}
-  m_Layer: 0
-  m_Name: DialogueTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1843187071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843187070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d69d7fdba421834eab79a1338fe2eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - Those things were zombies! This is bad! What the hell happened during Spring
-    Break?!
-  - You quickly decide that delivering your assignment to Dr. Brener is more important
-    right now. You know Brener maintains an office inside Lockett Hall.
-  - Now you just need to get to the building, get inside, and find your professor
-    before something bad happens to you or to your homework...
---- !u!65 &1843187072
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843187070}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1843187073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843187070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 133.05, y: 1.63, z: 67.345}
-  m_LocalScale: {x: 1, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861165008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7160115703404445948, guid: a1ae189e51e352c4fa15728d5285ee7a,
@@ -24190,3 +24126,72 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3071206, y: 1.3051255, z: 0.89811045}
   m_Center: {x: 4.3298694e-15, y: -0.00000017881393, z: -0.0000005811453}
+--- !u!1001 &9043944924172666464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9043944923415350046, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 133.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 67.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55956cb58ece9f942983709e85ab1c38, type: 3}
