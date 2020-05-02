@@ -506,11 +506,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.19467984, y: -0.6625668, z: 0.1844413, w: 0.6993474}
     speed: 2
-    m_Value: {x: 0.19467981, y: -0.6625667, z: 0.18444128, w: 0.6993473}
+    m_Value: {x: -0.19467984, y: 0.6625668, z: -0.1844413, w: -0.6993473}
   m_Size:
-    m_Target: 30.472837
+    m_Target: 34.77457
     speed: 2
-    m_Value: 30.472837
+    m_Value: 33.2771
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
