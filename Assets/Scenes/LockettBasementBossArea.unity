@@ -3612,6 +3612,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[5]
+      value: Even though the thin hope of graduating you'd clung to had instantly
+        vanished, you felt a sense of calm. You knew what you needed to do. Brener
+        deserves to rest. Help him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: As you searched the basement of Lockett for clues, you heard the tell-tale
+        sound of a carbonated beverage bottle being opened. The sound came from the
+        large auditorium classroom in the center.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: You bravely advanced to investigate the noise, quietly calming your
+        nerves. Then, upon entering the auditorium, your eyes immediately fall on
+        a large mass on the other side of the room. Trash and all kinds of knick
+        knacks have been piled up, like some sort of nest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: Almost as if on cue, you suddenly realize that the nest still holds
+        an occupant. A lanky black and white figure rises from the debris, stretching
+        up and up; impossibly tall and thin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: However, as your eyes focus on the body's head and face, your blood
+        runs cold. You'd recognize that face anywhere...
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[4]
+      value: ...Dr. Brener! The now-monsterous computer science professor's face
+        appears to be filled with monsterous rage. Rage focused solely on you.
+      objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3650,7 +3696,7 @@ PrefabInstance:
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
@@ -3847,22 +3893,6 @@ Transform:
   m_Father: {fileID: 230292080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &338501552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 535475844}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 535475845}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &339948361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,104 +4509,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518108170}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &535475844
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4544906788343102329, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_Name
-      value: Magazine Rack_MD_02_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -35.081356
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.049999952
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 21.486221
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544906788343129945, guid: dbf4e0c11ac56a948af2113067cdb047,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dbf4e0c11ac56a948af2113067cdb047, type: 3}
---- !u!4 &535475845
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 535475844}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338501552}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1276491149}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &552886265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6855,7 +6787,7 @@ Transform:
   - {fileID: 518108171}
   - {fileID: 1479487725}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1081742003
 PrefabInstance:
@@ -7386,37 +7318,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f1ce0d205990a244a38657bf0571ced, type: 3}
---- !u!1 &1276491148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 535475844}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1276491149}
-  m_Layer: 0
-  m_Name: Magazine Rack_MD_02_01 (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1276491149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 535475844}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276491148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 535475845}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1287548746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10059,7 +9960,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9d06428989913ed459f257d35f36e222,
         type: 3}
@@ -10895,7 +10796,7 @@ Transform:
   m_Children:
   - {fileID: 1378807494}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800390118
 GameObject:
@@ -11280,7 +11181,7 @@ Transform:
   - {fileID: 1818607618}
   - {fileID: 87993088}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1965139107
 PrefabInstance:

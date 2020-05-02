@@ -4919,6 +4919,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: 'Welcome! Thank you for playing LSU: Last Survivor University!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: This tutorial covers the day before Spring Break. You were asked by
+        one of your professors to speak after class. You obeyed, curious as to the
+        reason since you know you have not done anything wrong.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: As you approached, you notice the professor has begun to behave erratically,
+        growling menacingly at you. Without warning, he attacks! You quickly dodge
+        and grab the stick your professor uses as a walking cane for a weapon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: Use the arrow keys or WASD to control the character's movement and direction
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[4]
+      value: Use the left shift key to dash
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[5]
+      value: Press spacebar to attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[6]
+      value: Once you have defeated your professor, please exit via the doors across
+        the room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[7]
+      value: 'We hope you enjoy our game. Welcome to LSU: Last Survivor University!'
+      objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
       propertyPath: m_LocalPosition.x

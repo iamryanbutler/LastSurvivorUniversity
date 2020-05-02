@@ -24862,6 +24862,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: Your name is AJ. As a student at LSU, you would normally anticipate
+        the arrival of the Spring Break holiday.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: However, not this time. Due to your grade depending on a high priority
+        homework assignment, you elected to remain in your dorm to make sure it was
+        perfect.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: You worked night and day to complete the assignment, disregarding any
+        outside distraction. With the assignment finally complete, you exited your
+        dorm room in order to head to class and submit your masterpiece to your professor,
+        Dr. Brener.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: As you exited your room, you immediately became uneasy when you noticed
+        that the building was devoid of other people. Your suspicion only grew while
+        walking toward the Quad. You have still yet to see another human.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[4]
+      value: You quickly decide that delivering your assignment to Dr. Brener is
+        more important right now. You recall being told that Brener maintains an
+        office inside Lockett Hall.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[5]
+      value: Upon entering the Quad, your eyes could scarcely believe the scene.
+        There was property damage everywhere and what appears to be crowds of people
+        eagerly making a beeline in your direction...
+      objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
       propertyPath: m_LocalPosition.x

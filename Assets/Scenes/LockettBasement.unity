@@ -1936,7 +1936,7 @@ PrefabInstance:
     - target: {fileID: 1762507736104395030, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}
       propertyPath: scene
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5878251626405305615, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}
@@ -11187,7 +11187,7 @@ PrefabInstance:
     - target: {fileID: 1762507736104395030, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}
       propertyPath: scene
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5878251626405305615, guid: 0db3e5c178834c44c8c9d2a1ec4aca7d,
         type: 3}
@@ -11466,6 +11466,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: You begin to wonder if perhaps this was a bad idea. Lockett appears
+        to be swarming with these monsters, some of whom you recognize as classmates
+        and professors.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: Although still somewhat cluttered with barricades, boxes, and other
+        debris, the basement appears to be in much better shape than the floor above.
+        You feel like this floor of Lockett was overrun only recently.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: There was no sign of Brener up above, but perhaps you'll get lucky and
+        find some trace of him. After all, SOMEONE was here within the last day or
+        so...
       objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}

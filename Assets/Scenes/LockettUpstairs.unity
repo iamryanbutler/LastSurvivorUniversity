@@ -3212,6 +3212,64 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 337372784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &358680077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358680080}
+  - component: {fileID: 358680079}
+  - component: {fileID: 358680078}
+  m_Layer: 0
+  m_Name: SceneTransition-LockettBasement (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &358680078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358680077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c045d8687a4fd8346a249037b6624b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 4
+--- !u!65 &358680079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358680077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &358680080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358680077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.79, y: 2, z: 35.39}
+  m_LocalScale: {x: 1, y: 1.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &367030349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11634,6 +11692,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: Once inside the building, you take a moment to catch your breath. You
+        see a discarded local newspaper laying nearby and quickly pick it up. It's
+        only a few days old.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: A quick readthrough informs you that LSU is ground zero for a rapidly-spreading
+        virus which affects the brain and body, mutating hosts into monsterous versions
+        of their former selves.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: According to the paper, only 1 in 10,000 are estimated to be immune.
+        However, on the flip side, 1 in 10,000 undergo secondary mutations, which
+        cause rapid bone lengthening and heightened aggression. Yet somehow the infected
+        retain their former identities, albeit the darkest and worst parts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043944923415350047, guid: 55956cb58ece9f942983709e85ab1c38,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: Things are going from bad to worse. From the outside, Lockett appeared
+        to be fortified. At least, the basement did anyways. If I were to find Brener
+        anywhere on campus, that's where he would be.
+      objectReference: {fileID: 0}
     - target: {fileID: 9043944923415350241, guid: 55956cb58ece9f942983709e85ab1c38,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11721,7 +11813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c045d8687a4fd8346a249037b6624b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 4
+  scene: 5
 --- !u!65 &1807346604
 BoxCollider:
   m_ObjectHideFlags: 0
